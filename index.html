@@ -10,14 +10,10 @@
 
 <body>
 
-    <input type="text" id="myInput" oninput="myFunction()">
-
-    <p id="demo"></p>
-    
     <script>
     function myFunction() {
-      let text = document.getElementById("myInput").value;
-      document.getElementById("demo").innerHTML = "You wrote: " + text;
+      let text = document.getElementById("iuFROM").value;
+      document.getElementById("ugFROM").innerHTML = text;
     }
     </script>
 
@@ -33,8 +29,8 @@
             <legend>Enter Label Information:</legend>
 
             <div class="input-group">
-                <label for="uForm">FROM:</label>
-                <input type="text" name="uFROM" id="">
+                <label for="iuFROM">FROM:</label>
+                <input type="text" name="uFROM" id="iuFROM" oninput="myFunction()">
             </div>
 
             <div class="input-group">
