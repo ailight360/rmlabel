@@ -10,6 +10,18 @@
 
 <body>
 
+    <input type="text" id="myInput" oninput="myFunction()">
+
+    <p id="demo"></p>
+    
+    <script>
+    function myFunction() {
+      let text = document.getElementById("myInput").value;
+      document.getElementById("demo").innerHTML = "You wrote: " + text;
+    }
+    </script>
+
+    
 
     <div class="user-area">
 
@@ -64,7 +76,7 @@
             <div class="user-grid">
 
                 <div class="grid-section">
-                    <span id="ugFROM">FROM:</span>
+                    <span>FROM: <p id="ugFROM"></p></span>
                     <span>TO: </span>
                     <span>PRODUCT: </span>
                     <span>COLOR: </span>
