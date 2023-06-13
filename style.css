@@ -1,3 +1,32 @@
 *,::after,::before{box-sizing:border-box}*{margin:0}body{line-height:1.5;-webkit-font-smoothing:antialiased}canvas,img,picture,svg,video{display:block;max-width:100%}button,input,select,textarea{font:inherit}h1,h2,h3,h4,h5,h6,p{overflow-wrap:break-word}#__next,#root{isolation:isolate}
 
+body {
+    background: #ededed;
+}
 
+.user-area {
+    width: 21cm;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.user-imput {
+    margin-bottom: 30px;
+    background: #eee;
+}
+
+.user-print {
+    background: #fff;
+}
+
+.user-grid {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3, minmax(0,1fr));
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 15px;
+}

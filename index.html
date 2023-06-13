@@ -10,15 +10,7 @@
 
 <body>
 
-    <script>
-    function myFunction() {
-      let text = document.getElementById("iuFROM").value;
-      document.getElementById("ugFROM").innerHTML = text;
-    }
-    </script>
-
      
-
     <div class="user-area">
 
 
@@ -30,37 +22,37 @@
 
             <div class="input-group">
                 <label for="iuFROM">FROM:</label>
-                <input type="text" name="uFROM" id="iuFROM" oninput="myFunction()">
+                <input type="text" name="uFROM" id="iuFROM" oninput="iuFROM()">
             </div>
 
             <div class="input-group">
                 <label for="uTO"></label>TO:</label>
-                <input type="text" name="" id="uTO">
+                <input type="text" name="" id="uTO" oninput="uTO()">
             </div>
 
             <div class="input-group">
                 <label for="uPRODUCT"></label>PRODUCT:</label>
-                <input type="text" name="" id="uPRODUCT">
+                <input type="text" name="" id="uPRODUCT" oninput="uPRODUCT()">
             </div>
 
             <div class="input-group">
                 <label for="uCOLOR"></label>COLOR:</label>
-                <input type="text" name="" id="uCOLOR">
+                <input type="text" name="" id="uCOLOR" oninput="uCOLOR()">
             </div>
 
             <div class="input-group">
                 <label for="uSIZE"></label>SIZE:</label>
-                <input type="text" name="" id="uSIZE">
+                <input type="text" name="" id="uSIZE" oninput="uSIZE()">
             </div>
 
             <div class="input-group">
-                <label for=""></label>LOT NO:</label>
-                <input type="text" name="" id="uLOT">
+                <label for="uLOT"></label>LOT NO:</label>
+                <input type="number" name="" id="uLOT" oninput="uLOT()">
             </div>
 
             <div class="input-group">
                 <label for="uDATE"></label>DATE:</label>
-                <input type="date" name="" id="uDATE">
+                <input type="date" name="" id="uDATE" oninput="uDATE()">
             </div>
 
         </fieldset>
@@ -72,12 +64,34 @@
             <div class="user-grid">
 
                 <div class="grid-section">
-                    <li>FROM: <span id="ugFROM"></span></li>
-                    <li>TO: </li>
-                    <li>PRODUCT: </li>
-                    <li>COLOR: </li>
-                    <li>SIZE: </li>
-                    <li>LOT NO: </li>
+                    <p>FROM: <span id="ugFROM"></span></p>
+                    <p>TO: <span id="uTOFROM"></span></p>
+                    <p>PRODUCT: <span id="uPRODUCTFROM"></span></p>
+                    <p>COLOR: <span id="uCOLORFROM"></span></p>
+                    <p>SIZE: <span id="uSIZEFROM"></span></p>
+                    <p>LOT NO: <span id="uLOTFROM"></span></p>
+                    <p>DATE: <span id="uDATEFROM"></span></p>
+                </div>
+
+                <div class="grid-section">
+                    <p>FROM: <span id="ugFROM"></span></p>
+                    <p>TO: <span id="uTOFROM"></span></p>
+                    <p>PRODUCT: <span id="uPRODUCTFROM"></span></p>
+                    <p>COLOR: <span id="uCOLORFROM"></span></p>
+                    <p>SIZE: <span id="uSIZEFROM"></span></p>
+                    <p>LOT NO: <span id="uLOTFROM"></span></p>
+                    <p>DATE: <span id="uDATEFROM"></span></p>
+                </div>
+
+
+                <div class="grid-section">
+                    <p>FROM: <span id="ugFROM"></span></p>
+                    <p>TO: <span id="uTOFROM"></span></p>
+                    <p>PRODUCT: <span id="uPRODUCTFROM"></span></p>
+                    <p>COLOR: <span id="uCOLORFROM"></span></p>
+                    <p>SIZE: <span id="uSIZEFROM"></span></p>
+                    <p>LOT NO: <span id="uLOTFROM"></span></p>
+                    <p>DATE: <span id="uDATEFROM"></span></p>
                 </div>
 
                 
