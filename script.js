@@ -1,7 +1,8 @@
 function iuFROM() {
-  let text = document.getElementsByClassName("iuFROM").value;
-    document.getElementsByClassName("ugCOMPANY").innerHTML = text;
+  let text = document.getElementById("iuFROM").value;
+    document.getElementById("ugCOMPANY").innerHTML = text;
   };
+
 
   function uTO() {
     let text = document.getElementById("uTO").value;
@@ -35,3 +36,16 @@ function iuFROM() {
     let text = document.getElementById("uDATE").value;
     document.getElementById("uDATEFROM").innerHTML = text;
   };
+
+
+  document.getElementById('button').onclick = duplicate;
+
+
+  var i = 0;
+  var original = document.getElementById('duplicater');
+  
+  function duplicate() {
+      var clone = original.cloneNode(true); // "deep" clone
+      clone.id = "duplicetor" + ++i; // there can only be one element with an ID
+      original.parentNode.appendChild(clone);
+  }

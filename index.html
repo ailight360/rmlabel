@@ -18,71 +18,65 @@
             
             <fieldset>
 
-            <legend>Enter Label Information:</legend>
+                <legend>Enter Label Information:</legend>
+
+                <div class="input-group">
+                    <label for="iuFROM">FROM:</label>
+                    <input type="text" name="uFROM" id="iuFROM" oninput="iuFROM()">
+                </div>
 
             <div class="input-group">
-                <label for="iuFROM">FROM:</label>
-                <input type="text" name="uFROM" class="iuFROM" oninput="iuFROM()">
+                <label for="uTO"></label>TO:</label>
+                <input type="text" name="" id="uTO" oninput="uTO()">
             </div>
 
-        <!-- <div class="input-group">
-            <label for="uTO"></label>TO:</label>
-            <input type="text" name="" id="uTO" oninput="uTO()">
-        </div>
+            <div class="input-group">
+                <label for="uPRODUCT"></label>PRODUCT:</label>
+                <input type="text" name="" id="uPRODUCT" oninput="uPRODUCT()">
+            </div>
 
-        <div class="input-group">
-            <label for="uPRODUCT"></label>PRODUCT:</label>
-            <input type="text" name="" id="uPRODUCT" oninput="uPRODUCT()">
-        </div>
+            <div class="input-group">
+                <label for="uCOLOR"></label>COLOR:</label>
+                <input type="text" name="" id="uCOLOR" oninput="uCOLOR()">
+            </div>
 
-        <div class="input-group">
-            <label for="uCOLOR"></label>COLOR:</label>
-            <input type="text" name="" id="uCOLOR" oninput="uCOLOR()">
-        </div>
+            <div class="input-group">
+                <label for="uSIZE"></label>SIZE:</label>
+                <input type="text" name="" id="uSIZE" oninput="uSIZE()">
+            </div>
 
-        <div class="input-group">
-            <label for="uSIZE"></label>SIZE:</label>
-            <input type="text" name="" id="uSIZE" oninput="uSIZE()">
-        </div>
+            <div class="input-group">
+                <label for="uLOT"></label>LOT NO:</label>
+                <input type="number" name="" id="uLOT" oninput="uLOT()">
+            </div>
 
-        <div class="input-group">
-            <label for="uLOT"></label>LOT NO:</label>
-            <input type="number" name="" id="uLOT" oninput="uLOT()">
-        </div>
+            <div class="input-group">
+                <label for="uDATE"></label>DATE:</label>
+                <input type="date" name="" id="uDATE" oninput="uDATE()">
+            </div>
 
-        <div class="input-group">
-            <label for="uDATE"></label>DATE:</label>
-            <input type="date" name="" id="uDATE" oninput="uDATE()">
-        </div> -->
+            </fieldset>
 
-        </fieldset>
+            
 
         </div>
 
         <div class="user-print">
 
             <div class="user-grid">
+                
+                <button id="button" onlick="duplicate()">Click me</button>
 
-                <div class="grid-section">
-                    <p>COMPANY: <span class="ugCOMPANY"></span></p>
-                    <p>COMPANY: <span class="ugCOMPANY"></span></p>
-                    <!-- <p>TO: <span class="uTOFROM"></span></p>
-                    <p>PRODUCT: <span class="uPRODUCTFROM"></span></p>
-                    <p>COLOR: <span class="uCOLORFROM"></span></p>
-                    <p>SIZE: <span class="uSIZEFROM"></span></p>
-                    <p>LOT NO: <span class="uLOTFROM"></span></p>
-                    <p>DATE: <span class="uDATEFROM"></span></p> -->
+                <div id="duplicater" class="grid-section">
+                    <p>COMPANY: <span id="ugCOMPANY"></span></p>
+                    <p>TO: <span id="uTOFROM"></span></p>
+                    <p>PRODUCT: <span id="uPRODUCTFROM"></span></p>
+                    <p>COLOR: <span id="uCOLORFROM"></span></p>
+                    <p>SIZE: <span id="uSIZEFROM"></span></p>
+                    <p>LOT NO: <span id="uLOTFROM"></span></p>
+                    <p>DATE: <span id="uDATEFROM"></span></p>
                 </div>
 
-                <!-- <div class="grid-section">
-                    <p>FROM: <span class="ugFROM"></span></p>
-                    <p>TO: <span class="uTOFROM"></span></p>
-                    <p>PRODUCT: <span class="uPRODUCTFROM"></span></p>
-                    <p>COLOR: <span class="uCOLORFROM"></span></p>
-                    <p>SIZE: <span class="uSIZEFROM"></span></p>
-                    <p>LOT NO: <span class="uLOTFROM"></span></p>
-                    <p>DATE: <span class="uDATEFROM"></span></p>
-                </div> -->
 
                 
             </div>
