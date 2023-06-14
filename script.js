@@ -1,6 +1,6 @@
 function iuFROM() {
-    let text = document.getElementById("iuFROM").value;
-    document.getElementById("ugFROM").innerHTML = text;
+  let text = document.getElementById("iuFROM").value;
+    document.querySelectorAll(".ugCOMPANY").innerHTML = text;
   };
 
   function uTO() {
