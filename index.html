@@ -5,87 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    
 </head>
 
 <body>
 
-     
-    <div class="user-area">
+    
 
+    <div class="inputArea">
 
-        <div class="user-imput">
-            
-            <fieldset>
+        <fieldset>
+        <legend>Enter Informaation for label</legend>
 
-                <legend>Enter Label Information:</legend>
+        <select id="fromInputName" oninput="fromInput()">
+            <option selected value="R. M. POLY AND PAKCAGING">R. M. POLY AND PAKCAGING</option>
+            <option value="R. S. ACESSORIES">R. S. ACESSORIES</option>
+        </select>
 
-                <div class="input-group">
-                    <label for="iuFROM">FROM:</label>
-                    <input type="text" name="uFROM" id="iuFROM" oninput="iuFROM()">
-                </div>
+        <select id="toInputName" oninput="toInput()">
+            <option selected value="Dhaka Ice Cream Ind. Ltd">Dhaka Ice Cream Industries Ltd.</option>
+            <option value="Taufika Foods And Lovello Ice Cream Plc.">Taufika Foods And Lovello Ice Cream Plc.</option>
+            <option value="Abdul Monem Ltd.">Abdul Monem Ltd.</option>
+            <option value="Kazi Food Ind. Ltd.">Kazi Food Ind. Ltd.</option>
+            <option value="Nazer Foods & Bevrages Ltd.">Nazer Foods & Bevrages Ltd.</option>
+            <option value="Sony Ice Cream Factory">Sony Ice Cream Factory</option>
+            <option value="Khusboo Ice Cream Factory">Khusboo Ice Cream Factory</option>
+            <option value="Dolphy Ice Cream Factory">Dolphy Ice Cream Factory</option>
+        </select>
+    
+        </fieldset>
 
-            <div class="input-group">
-                <label for="uTO"></label>TO:</label>
-                <input type="text" name="" id="uTO" oninput="uTO()">
-            </div>
-
-            <div class="input-group">
-                <label for="uPRODUCT"></label>PRODUCT:</label>
-                <input type="text" name="" id="uPRODUCT" oninput="uPRODUCT()">
-            </div>
-
-            <div class="input-group">
-                <label for="uCOLOR"></label>COLOR:</label>
-                <input type="text" name="" id="uCOLOR" oninput="uCOLOR()">
-            </div>
-
-            <div class="input-group">
-                <label for="uSIZE"></label>SIZE:</label>
-                <input type="text" name="" id="uSIZE" oninput="uSIZE()">
-            </div>
-
-            <div class="input-group">
-                <label for="uLOT"></label>LOT NO:</label>
-                <input type="number" name="" id="uLOT" oninput="uLOT()">
-            </div>
-
-            <div class="input-group">
-                <label for="uDATE"></label>DATE:</label>
-                <input type="date" name="" id="uDATE" oninput="uDATE()">
-            </div>
-
-            </fieldset>
-
-            
-
-        </div>
-
-        <div class="user-print">
-
-            <div class="user-grid">
-                
-                <button id="button" onlick="duplicate()">Click me</button>
-
-                <div id="duplicater" class="grid-section">
-                    <p>COMPANY: <span id="ugCOMPANY"></span></p>
-                    <p>TO: <span id="uTOFROM"></span></p>
-                    <p>PRODUCT: <span id="uPRODUCTFROM"></span></p>
-                    <p>COLOR: <span id="uCOLORFROM"></span></p>
-                    <p>SIZE: <span id="uSIZEFROM"></span></p>
-                    <p>LOT NO: <span id="uLOTFROM"></span></p>
-                    <p>DATE: <span id="uDATEFROM"></span></p>
-                </div>
-
-
-                
-            </div>
-
-
-        </div>
+        
+        <button type="submit" id="addbutton">Add +</button>
+        <button type="submit" id="removebtn" onclick="removeItem()">Remove X </button>
 
     </div>
+
+
+    <div class="printArea">
+        <div id="grids">
+            <div class="items">
+            <p><span>From: </span><span class="fromName"></span></p>
+            <p><span>TO: </span><span class="toName"></span></p>
+            </div>
+        </div>
+    </div>
+
+
     
+
+
+    
+
+
+    
+
+    <script src="script.js"></script>
+
+
 </body>
 
 </html>

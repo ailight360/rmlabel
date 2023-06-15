@@ -4,29 +4,26 @@ body {
     background: #ededed;
 }
 
-.user-area {
+.inputArea, .printArea {
     width: 21cm;
     margin: 0 auto;
     margin-top: 30px;
 }
 
-.user-imput {
+.printArea {
     margin-bottom: 30px;
-    background: #eee;
-}
-
-.user-print {
     background: #fff;
 }
 
-.user-grid {
-    display: grid;
-    gap: 15px;
-    grid-template-columns: repeat(3, minmax(0,1fr));
-}
 
 fieldset {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 15px;
+}
+
+#grids{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3, minmax(0,1fr));
 }
