@@ -8,6 +8,7 @@ body {
     width: 21cm;
     margin: 0 auto;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .printArea {
@@ -19,11 +20,15 @@ body {
 fieldset {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-row-gap: 15px;
+    row-gap: 15px;
 }
 
 #grids{
     display: grid;
-    gap: 15px;
     grid-template-columns: repeat(3, minmax(0,1fr));
+}
+.items {
+    font-size: 12px;
+    padding: 5px;
+    border: 2px dashed #eee;
 }
